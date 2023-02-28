@@ -1,0 +1,30 @@
+<div>
+  <select
+    id="sel1"
+    name="Region"
+    class="rounded-inputs20 select-select col-md-3"
+  >
+    <option *ngFor="let region of regions" [value]="region">
+      {{ region }}
+    </option>
+  </select>
+  <select id="sel2" name="Site" class="rounded-inputs20 select-select col-md-3">
+    <option *ngFor="let site of sites" [value]="site">{{ site }}</option>
+  </select>
+</div>
+
+<div #charts></div>
+
+<div>
+  <h3>Tasks Status - This Week</h3>
+</div>
+<div class="col-6">
+  <div id="pie-chart"></div>
+</div>
+
+<div>
+  <h3>Task Completion Rate</h3>
+</div>
+<div class="col-6">
+  <div id="tasks-chart"></div>
+</div>
