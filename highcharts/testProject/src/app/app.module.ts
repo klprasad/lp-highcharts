@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HighChartsComponent } from './high-charts/high-charts.component';
+import { TasksTableComponent } from './tasks-table/tasks-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
-    HighChartsComponent
+    HighChartsComponent,
+    TasksTableComponent
   ],
   imports: [
     BrowserModule,
